@@ -28,7 +28,7 @@ int main()
     scanf("%d", &total);
 
     printf("A soma dos três números digitados é: %d\n", total);
-*/
+
     // Ex04 Ler um n real e imprimir o quadrado
     int numReal, quadrado;
 
@@ -37,6 +37,16 @@ int main()
 
     quadrado = numReal * numReal;
 
-    printf("O quadrado do número digitado( %d ) é: %d", numReal, quadrado);
+    printf("O quadrado do número digitado ( %d ) é: %d", numReal, quadrado);
+*/
+    // Ex 05 Ler um número e imprimir a quinta parte dele
+    float num1, quintaParte;
+
+    printf("Digite o número a ser calculado sua quinta parte: \n");
+    scanf("%f", &num1);
+
+    quintaParte = num1 / 5;
+
+    printf("A quinta parte de (%.0f) é: %.2f", num1, quintaParte);
     return 0;
 }
