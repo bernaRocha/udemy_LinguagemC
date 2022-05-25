@@ -12,7 +12,7 @@ int main()
 
     scanf("%d", &inteiro);
     printf("O número digitado foi: %d\n", inteiro);
-*/
+
     //Ex2 Digitar 3 valor e imprimir a soma
     int num1, num2, num3, total;
     total = num1 + num2 + num3;
@@ -28,6 +28,15 @@ int main()
     scanf("%d", &total);
 
     printf("A soma dos três números digitados é: %d\n", total);
+*/
+    // Ex04 Ler um n real e imprimir o quadrado
+    int numReal, quadrado;
 
+    printf("Digite um número real: \n");
+    scanf("%d", &numReal);
+
+    quadrado = numReal * numReal;
+
+    printf("O quadrado do número digitado( %d ) é: %d", numReal, quadrado);
     return 0;
 }
