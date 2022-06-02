@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
+#include <math.h> // biblioteca para matemática
 
 int main()
 {
@@ -33,11 +34,47 @@ int main()
     scanf("%f", &m2);
     acres = m2 * 0.00024711;
     printf("A medida %.2f m2 em acres é: %.8f", m2, acres);
-*/
+
     // Ex 25 Converta uma área em acres para m2
     float m2, acres;
     printf("Converta uma medida em acres para m2: \n");
     scanf("%f", &acres);
     m2 = acres / 0.00024711;
     printf("A área de %.1f acres em m2 é: %.2f", acres, m2);
+
+    // Ex 26 Converter m2 para hectares
+    float m2, hectares;
+    printf("Coverta a área de m2 para hectáres: \n");
+    scanf("%f", &m2);
+    hectares = m2 * 0.0001;
+    printf("A área de %.1fm2 convertida em hectares é: %.7f", m2, hectares);
+
+    // Ex 27 Converter hectares em m2
+    float m2, hectares;
+    printf("Coverta a área de hectares para m2: \n");
+    scanf("%f", &hectares);
+    m2 = hectares * 10000;
+    printf("%.1f hectares em m2 é: %.2f", hectares, m2);
+
+    // Ex 28 Ler 3 valores e apresentar a soma do quadrado dos 3
+    int num1, num2, num3;
+    printf("Registre três valores e exiba a soma do quadrados deles -> \n");
+    scanf("%d", &num1);
+    scanf("%d", &num2);
+    scanf("%d", &num3);
+    printf("A soma dos quadrados dos três números é: %d", (num1 * num1) + (num2 * num2)+ (num3 * num3));
+ */
+    // Ex 29 Ler 4 notas e imprimir a média delas
+    float nota1, nota2, nota3, nota4, media;
+    printf("Registre a nota 1 para o cálculo da média: \n");
+    scanf("%f", &nota1);
+    printf("Registre a nota 2 para o cálculo da média: \n");
+    scanf("%f", &nota2);
+    printf("Registre a nota 3 para o cálculo da média: \n");
+    scanf("%f", &nota3);
+    printf("Registre a nota 4 para o cálculo da média: \n");
+    scanf("%f", &nota4);
+    media = (nota1 + nota2 + nota3 + nota4) / 4;
+    printf("A média das quatro notas é %.1f", media);
+    return 0;
 }
