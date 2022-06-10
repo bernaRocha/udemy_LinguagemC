@@ -65,16 +65,5 @@ int main()
     printf("A soma dos quadrados dos três números é: %d", (num1 * num1) + (num2 * num2)+ (num3 * num3));
  */
     // Ex 29 Ler 4 notas e imprimir a média delas
-    float nota1, nota2, nota3, nota4, media;
-    printf("Registre a nota 1 para o cálculo da média: \n");
-    scanf("%f", &nota1);
-    printf("Registre a nota 2 para o cálculo da média: \n");
-    scanf("%f", &nota2);
-    printf("Registre a nota 3 para o cálculo da média: \n");
-    scanf("%f", &nota3);
-    printf("Registre a nota 4 para o cálculo da média: \n");
-    scanf("%f", &nota4);
-    media = (nota1 + nota2 + nota3 + nota4) / 4;
-    printf("A média das quatro notas é %.1f", media);
-    return 0;
+
 }
