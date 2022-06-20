@@ -103,14 +103,19 @@ int main()
     } else {
         printf("Números iguais. (%d)", num1);
     }
-*/
+
     // Ex 08
+
     float nota1, nota2, media;
 
+
     printf("Digite a primeira nota do aluno: \n");
+    fflush( stdout );
     scanf("%f",&nota1);
 
+
     printf("Digite a segunda nota do aluno: \n");
+    fflush( stdout );
     scanf("%f",&nota2);
 
     if((nota1 >= 0 && nota1 <= 10) && (nota2 >= 0 && nota2 <= 10)){
@@ -119,5 +124,42 @@ int main()
     } else if (nota1 || nota2 > 10 && nota1 || nota2 < 0) {
         printf("Números inválidos, por favor tente novamente.");
     }
+*/
+
+    // Ex 09
+    float salario, totalEmprestimo, prestacaoEmprestimo;
+    printf("Registre  seu salário. \n");
+    fflush( stdout );
+    scanf("%f", &salario);
+
+    printf("Quanto deseja de emprestimo para que seja pago em 12 vezes? \n");
+    fflush( stdout );
+    scanf("%f", &totalEmprestimo);
+
+    prestacaoEmprestimo = totalEmprestimo  / 12;
+
+    if(prestacaoEmprestimo > (0.2 * salario)) {
+        printf("O empréstimo não pode ser condedido.");
+    }
+    else {
+        printf("Empréstimo aprovado.");
+    }
+
+/*
+    //Ex 10
+    char genero;
+    float altura, pesoIdeal;
+
+    printf("Verifique aqui seu peso ideal. \n");
+    printf("Informe seu gênero [M/m ou F/f]: \n");
+    scanf("%c", &genero);
+    printf("Informe sua altura. \n");
+    scanf("%f", &altura);
+
+    if(genero == M || genero == m) {
+        pesoIdeal = (72.7 * altura) - 58;
+    }
+*/
     return 0;
+
 }
