@@ -124,7 +124,6 @@ int main()
     } else if (nota1 || nota2 > 10 && nota1 || nota2 < 0) {
         printf("Números inválidos, por favor tente novamente.");
     }
-*/
 
     // Ex 09
     float salario, totalEmprestimo, prestacaoEmprestimo;
@@ -145,7 +144,7 @@ int main()
         printf("Empréstimo aprovado.");
     }
 
-/*
+*/
     //Ex 10
     char genero;
     float altura, pesoIdeal;
@@ -153,13 +152,19 @@ int main()
     printf("Verifique aqui seu peso ideal. \n");
     printf("Informe seu gênero [M/m ou F/f]: \n");
     scanf("%c", &genero);
+
     printf("Informe sua altura. \n");
+    getchar();
     scanf("%f", &altura);
 
-    if(genero == M || genero == m) {
-        pesoIdeal = (72.7 * altura) - 58;
+    if(genero == 'M' || genero == 'm'){
+        pesoIdeal = (72.7 * altura) - 58.0;
+        printf("Sendo homem seu peso ideal tendo %.2f de altura é %.2fKg.", altura, pesoIdeal);
     }
-*/
-    return 0;
+    else if(genero == 'F' || genero == 'f'){
+        pesoIdeal = (62.1 * altura) - 44.7;
+        printf("Sendo mulher seu peso ideal tendo %.2f de altura é %.2fKg.", altura, pesoIdeal);
+    }
 
+    return 0;
 }
