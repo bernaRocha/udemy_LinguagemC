@@ -5,7 +5,7 @@
 
 int main()
 {
-    setlocale(LC_ALL, "");
+    //setlocale(LC_ALL, "");
 /*
     // Ex 21 Converta libras para quilogramas
     float libras, quilos;
@@ -63,7 +63,42 @@ int main()
     scanf("%d", &num2);
     scanf("%d", &num3);
     printf("A soma dos quadrados dos três números é: %d", (num1 * num1) + (num2 * num2)+ (num3 * num3));
- */
-    // Ex 29 Ler 4 notas e imprimir a média delas
+    printf("Ex 29 - Ler 4 notas e imprimir a média delas: \n");
 
+    float num1, num2, num3, num4, media;
+    printf("Registre os 4 números: \n");
+    scanf("%f%f%f%f", &num1, &num2, &num3, &num4);
+
+    media = (num1 + num2 + num3 + num4) / 4;
+
+    printf("A média é %.2f", media);
+
+    printf("Ex 30 - Ler um valor real e a cotacao do dolar, apos isso o valor em dolares\n\n");
+
+    float real, cotacao_dolar, real_em_dolar;
+    printf("O valor em reais: \n");
+    scanf("%f", &real);
+
+    printf("A cotação do dolar hoje: \n");
+    scanf("%f", &cotacao_dolar);
+    real_em_dolar = real / cotacao_dolar;
+    printf("O valor em reais convertido para dolares consiste em: %.2f", real_em_dolar);
+
+    printf("Ex 31 - lEr um numero, imprimir o antecessor e o seu sucessor.\n");
+    int numero, antecessor, sucessor;
+    printf("Registre um numero: \n");
+    scanf("%d", &numero);
+    antecessor = numero - 1;
+    printf("A antecessor = %d\n", antecessor);
+    sucessor = numero + 1;
+    printf("O sucessor = %d\n", sucessor);
+ */
+    printf("Ex 32 - Ler um inteiro e imprimir a soma do sucessor de seu triplo\ncom o antecessor do dobro.\n");
+    int numero, equacao;
+    printf("Registre o inteiro: \n\n");
+    scanf("%d", &numero);
+
+    equacao = (3 * numero + 1) + (2 * numero - 1);
+
+    printf("\nA soma do sucessor de seu triplo\ncom o antecessor do dobro = %d", equacao);
 }
