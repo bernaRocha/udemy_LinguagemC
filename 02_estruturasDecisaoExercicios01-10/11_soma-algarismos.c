@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 int main(){
     int numero;
@@ -15,7 +14,6 @@ int main(){
         numero = numero / 10;
     }
     
-
     printf("A soma dos algarismo digitados são: %d\n", soma);
     return 0;
 }
