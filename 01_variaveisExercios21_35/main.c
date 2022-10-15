@@ -127,7 +127,7 @@ int main()
     float catetoA, catetoB;
     float hipotenusa;
     printf("Registre os catetos a e b: \n");
-    scanf("%f%f", &catetoA, &catetoB);
+    scanf("%f %f", &catetoA, &catetoB);
     hipotenusa = sqrt ((catetoA * catetoA) + (catetoB * catetoB)); // Só funciona rodando pelo terminal:
                                                                    // gcc main.c -lm # cria o arquivo a.out
                                                                    // ./a.out                     
