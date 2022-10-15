@@ -14,7 +14,7 @@ int main()
     while(numero != 0) {
         soma += numero;
         //entrada
-        printf("Informe um número: ");
+        printf("Informe um número [0 para parar e fazer o somatório]: ");
         scanf("%d", &numero);
 
     }
